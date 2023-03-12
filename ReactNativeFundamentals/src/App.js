@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import FirstC from './components/FirstComponent'
+// import FirstC from './components/FirstComponent'
+import MinMax from './components/MinMax'
+
 // fora das chaves ele exporta o default e dentro algum expecífico (functions)
 import Oficial, { ComponentTwo, ComponentThree } from './components/Multi'
 
@@ -20,10 +22,15 @@ import Oficial, { ComponentTwo, ComponentThree } from './components/Multi'
 export default () => (
   <View style = {style.App}>
     {/* // dentro de uma chaves a gente pode usar como o javascript  */}
-    <Oficial />
+    {/* instânciando um componente */}
+    
+    <MinMax min = {1} max ={20} />
+    <MinMax min = {-5} max = {9} />
+
+    {/* <Oficial />
     <ComponentTwo />
     <ComponentThree />
-    <FirstC />
+    <FirstC /> */}
   </View>
 )
 
@@ -35,6 +42,8 @@ const style = StyleSheet.create({
     // 1 = tela inteira
     flexGrow: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    padding: 20,
+    margin: 40
   }
 })
