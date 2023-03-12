@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import FirstC from './components/FirstComponent'
 // fora das chaves ele exporta o default e dentro algum expecífico (functions)
 import Oficial, { ComponentTwo, ComponentThree } from './components/Multi'
@@ -18,10 +18,23 @@ import Oficial, { ComponentTwo, ComponentThree } from './components/Multi'
 // precisa fechar as tags
 
 export default () => (
-  <View>
+  <View style = {style.App}>
     {/* // dentro de uma chaves a gente pode usar como o javascript  */}
     <Oficial />
     <ComponentTwo />
     <ComponentThree />
     <FirstC />
-  </View>)
+  </View>
+)
+
+
+// define esilos que eu posso usar
+const style = StyleSheet.create({
+  App: {
+    backgroundColor: '#e5989b',
+    // 1 = tela inteira
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
+})
