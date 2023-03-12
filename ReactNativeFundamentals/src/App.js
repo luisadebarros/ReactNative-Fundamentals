@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { View } from 'react-native'
+import FirstC from './components/FirstComponent'
+// fora das chaves ele exporta o default e dentro algum expecífico (functions)
+import Oficial, { ComponentTwo, ComponentThree } from './components/Multi'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// react foi primeiro pra web e dps ap/ android e etc
+// cada arquivo desse é um component
+// raiz dos components
+
+// export default () => {
+//   // jsx é html que é interpretado como javascript
+//   // ele faz uma tradução direta para o que está usando (IOS, Android, web)
+//   return <Text>First Component!!</Text>
+// }
+
+// precisa fechar as tags
+
+export default () => (
+  <View>
+    {/* // dentro de uma chaves a gente pode usar como o javascript  */}
+    <Oficial />
+    <ComponentTwo />
+    <ComponentThree />
+    <FirstC />
+  </View>)
