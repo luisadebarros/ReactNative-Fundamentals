@@ -2,6 +2,7 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 // import FirstC from './components/FirstComponent'
 import MinMax from './components/MinMax'
+import Random from './components/Random'
 
 // fora das chaves ele exporta o default e dentro algum expecífico (functions)
 import Oficial, { ComponentTwo, ComponentThree } from './components/Multi'
@@ -24,8 +25,12 @@ export default () => (
     {/* // dentro de uma chaves a gente pode usar como o javascript  */}
     {/* instânciando um componente */}
     
-    <MinMax min = {1} max ={20} />
-    <MinMax min = {-5} max = {9} />
+    {/* <MinMax min = {1} max ={20} /> */}
+    {/* <MinMax min = {-5} max = {9} /> */}
+
+    <Random min = {5} max = {9}/>
+    <Random min = {3} max = {17}/>
+    <Random min = {-9} max = {-1}/>
 
     {/* <Oficial />
     <ComponentTwo />
