@@ -5,7 +5,8 @@
 
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import Couting from './components/Couting'
+import DadComponent from './components/directComunication/DadComponent'
+// import Couting from './components/Couting'
 // import Button from './components/Button'
 // import FirstC from './components/FirstComponent'
 // import MinMax from './components/MinMax'
@@ -35,7 +36,9 @@ export default () => (
      a gente pode usar como o javascript
      instânciando um componente */}
     
-     <Couting inicial = {100} quant = {0}/>
+    {/* <Couting inicial = {100} quant = {0}/> */}
+
+    <DadComponent />
 
     {/* <Button 
 

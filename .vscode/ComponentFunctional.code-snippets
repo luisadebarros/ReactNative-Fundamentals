@@ -5,10 +5,13 @@
 		"body": [
 			"import React, {useState} from 'react'",
 			"import { Text } from 'react-native'",
-			"import style from './style'",
+			"import style from './style'\n\n",
 			"export default props => {",
 			"\treturn (",
-			"\t\t<Text style = {style.}></Text>",
+			"\t\t<>",
+			"\t\t\t<Text style = {style.}>",
+			"\t\t\t</Text>",
+			"\t\t</>",
 			"\t)",
 			"}"
 
