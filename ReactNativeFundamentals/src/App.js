@@ -5,7 +5,8 @@
 
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
-import DadComponent from './components/directComunication/DadComponent'
+import DadComponent from './components/indirectComunication/DadComponent'
+// import DadComponent from './components/directComunication/DadComponent'
 // import Couting from './components/Couting'
 // import Button from './components/Button'
 // import FirstC from './components/FirstComponent'
